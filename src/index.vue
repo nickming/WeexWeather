@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper" @click="update">
     <div class="head-nav">
-      <text class="icon">&#xe745;</text>
+      <text class="icon"></text>
       <text class="head-text">东莞</text>
-      <text class="icon">&#xe64c;</text>
+      <text class="icon"></text>
     </div>
   
     <div class="head-detail">
@@ -26,12 +26,6 @@ export default {
     target: 'World'
   },
   created: function () {
-    var domModule = weex.requireModule("dom");
-    domModule.addRule('fontFace', {
-      'fontFamily': 'iconfont',
-      'src': "url(\'http://at.alicdn.com/t/font_lomyh2dp99t3xr.ttf?t=1496334733358')"
-    });
-
   },
   methods: {
     update: function (e) {
