@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper" @click="update">
     <div class="head-nav">
-      <text class="icon"></text>
+      <image class="icon" src="https://github.com/nickming/WeexWeather/blob/master/icons/menu.png?raw=true"></image>
       <text class="head-text">东莞</text>
-      <text class="icon"></text>
+      <image class="icon" src="https://github.com/nickming/WeexWeather/blob/master/icons/menu.png?raw=true"></image>
     </div>
   
     <div class="head-detail">
@@ -46,9 +46,9 @@ export default {
 }
 
 .icon {
-  font-family: "iconfont";
-  font-size: 24px;
-  color: black;
+  height: 30px;
+  width: 30px;
+  background: black;
 }
 
 .head-text {
