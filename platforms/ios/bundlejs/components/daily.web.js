@@ -65,7 +65,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -470,44 +470,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(13)
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(7),
-  /* template */
-  __webpack_require__(11),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/nickming/Desktop/weex/WeexWeather/src/components/hourly.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] hourly.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-a46b6af6", Component.options)
-  } else {
-    hotAPI.reload("data-v-a46b6af6", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
+/* 5 */,
 /* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -598,46 +561,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: {
-        hours: {
-            type: Object,
-            required: true
-        }
-    },
-    data: function () {
-        return {
-            baseUrl: ''
-        };
-    },
-    methods: {
-        convertCodeToUrl: function (code) {
-            return 'https://cdn.heweather.com/cond_icon/' + code + '.png';
-        }
-    }
-});
-
-/***/ }),
+/* 7 */,
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -652,20 +576,7 @@ exports.push([module.i, "\n.wrapper {\n    height: 100px;\n    padding: 10px;\n 
 
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)();
-// imports
-
-
-// module
-exports.push([module.i, "\n.wrapper {\n    height: 150px;\n    padding: 10px;\n}\n.hour-list {\n    margin-left: 10px;\n    margin-right: 10px;\n    flex-direction: row;\n    align-items: center;\n}\n.hour-cell {\n    width: 150px;\n    padding: 10px;\n}\n.hour-wrapper {\n    align-items: center;\n    justify-content: center;\n}\n.text {\n    font-size: 24px;\n    color: #fff;\n}\n.icon {\n    width: 24px;\n    height: 24px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 9 */,
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -713,43 +624,7 @@ if (false) {
 }
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "wrapper"
-  }, [_c('scroller', {
-    staticClass: "hour-list",
-    attrs: {
-      "scroll-direction": "horizontal"
-    }
-  }, _vm._l((_vm.hours), function(item, index) {
-    return _c('cell', {
-      staticClass: "hour-cell"
-    }, [_c('div', {
-      staticClass: "hour-wrapper"
-    }, [_c('text', {
-      staticClass: "common-text"
-    }, [_vm._v(_vm._s(item.cond.txt))]), _vm._v(" "), _c('image', {
-      staticClass: "icon",
-      attrs: {
-        "src": _vm.convertCodeToUrl(item.cond.code)
-      }
-    }), _vm._v(" "), _c('text', {
-      staticClass: "common-text"
-    }, [_vm._v(_vm._s(item.tmp) + "°C")])])])
-  }))], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-a46b6af6", module.exports)
-  }
-}
-
-/***/ }),
+/* 11 */,
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -776,269 +651,15 @@ if(false) {
 }
 
 /***/ }),
-/* 13 */
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(9);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("1f5e4472", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-a46b6af6!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./hourly.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-a46b6af6!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./hourly.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(21)
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(15),
-  /* template */
-  __webpack_require__(20),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/Users/nickming/Desktop/weex/WeexWeather/src/index.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8ef34f66", Component.options)
-  } else {
-    hotAPI.reload("data-v-8ef34f66", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 15 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_hourly_vue__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_hourly_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_hourly_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_daily_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_daily_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_daily_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var stream = weex.requireModule('stream');
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    hourly: __WEBPACK_IMPORTED_MODULE_0__components_hourly_vue___default.a,
-    daily: __WEBPACK_IMPORTED_MODULE_1__components_daily_vue___default.a
-  },
-  data: {
-    menuUrl: 'https://github.com/nickming/WeexWeather/blob/master/icons/menu.png?raw=true',
-    shareUrl: 'https://github.com/nickming/WeexWeather/blob/master/icons/SHARE.png?raw=true',
-    bgUrl: 'https://bing.ioliu.cn/v1?w=720&h=1280',
-    currentWeatherData: 'unknown',
-    hours: [],
-    dailys: [],
-    loading: false
-  },
-
-  created: function () {
-    this.getCurrentWeather('dongguan', response => {
-      this.currentWeatherData = response.ok ? response.data.HeWeather5[0] : "network error!";
-      this.hours = this.currentWeatherData.hourly_forecast;
-      this.dailys = this.currentWeatherData.daily_forecast;
-      this.loading = true;
-    });
-  },
-
-  methods: {
-    getCurrentWeather: function (city, callback) {
-      return stream.fetch({
-        method: 'GET',
-        type: 'json',
-        url: 'https://free-api.heweather.com/v5/weather?key=19713447578c4afe8c12a351d46ea922&city=dongguan'
-      }, callback);
-    }
-  }
-});
-
-/***/ }),
-/* 16 */,
-/* 17 */,
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var App = __webpack_require__(14);
+var App = __webpack_require__(4);
 App.el = '#root';
 new Vue(App);
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)();
-// imports
-
-
-// module
-exports.push([module.i, "\n.wrapper {\n}\n.bg-image {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 750px;\n  height: 1250px;\n  filter: blur(10px);\n  flex: 1;\n}\n.head-nav {\n  margin-top: 20px;\n  padding: 10px;\n  flex-direction: row;\n  justify-content: space-between;\n  height: 100px;\n}\n.icon {\n  height: 36px;\n  width: 36px;\n}\n.head-text {\n  font-size: 36px;\n  color: #fff;\n}\n.head-detail {\n  height: 200px;\n  align-items: center;\n  justify-content: center;\n}\n.tmp {\n  margin-top: 20px;\n  font-size: 64px;\n  color: #fff;\n}\n.cond {\n  margin-top: 50px;\n  font-size: 24px;\n  color: #fff;\n}\n.head-bottom {\n  padding: 10px;\n  height: 50px;\n  flex-direction: row;\n  justify-content: space-between;\n}\n.common-text {\n  font-size: 24px;\n  color: #fff;\n}\n.daily-wrapper {\n  margin-top: 20px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "wrapper",
-    on: {
-      "click": _vm.update
-    }
-  }, [_c('scroller', {
-    attrs: {
-      "show-scrollbar": "false"
-    }
-  }, [_c('image', {
-    staticClass: "bg-image",
-    attrs: {
-      "resize": "cover",
-      "src": _vm.bgUrl
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "head-nav"
-  }, [_c('image', {
-    staticClass: "icon",
-    attrs: {
-      "src": _vm.menuUrl
-    }
-  }), _vm._v(" "), _c('text', {
-    staticClass: "head-text"
-  }, [_vm._v(_vm._s(_vm.currentWeatherData.basic.city))]), _vm._v(" "), _c('image', {
-    staticClass: "icon",
-    attrs: {
-      "src": _vm.shareUrl
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "head-detail"
-  }, [_c('text', {
-    staticClass: "tmp"
-  }, [_vm._v(_vm._s(_vm.currentWeatherData.now.tmp) + "°C")]), _vm._v(" "), _c('text', {
-    staticClass: "cond"
-  }, [_vm._v(_vm._s(_vm.currentWeatherData.now.cond.txt))])]), _vm._v(" "), _c('div', {
-    staticClass: "head-bottom"
-  }, [_c('text', {
-    staticClass: "common-text"
-  }, [_vm._v("空气质量:" + _vm._s(_vm.currentWeatherData.aqi.city.qlty))]), _vm._v(" "), _c('text', {
-    staticClass: "common-text"
-  }, [_vm._v(_vm._s(_vm.currentWeatherData.now.wind.dir) + " " + _vm._s(_vm.currentWeatherData.now.wind.spd) + "级")])]), _vm._v(" "), _c('div', {
-    staticClass: "hourly-wrapper"
-  }, [_c('hourly', {
-    attrs: {
-      "hours": _vm.hours
-    }
-  })], 1), _vm._v(" "), _c('div', {
-    staticClass: "daily-wrapper"
-  }, [_c('daily', {
-    attrs: {
-      "dailys": _vm.dailys
-    }
-  })], 1)])], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-8ef34f66", module.exports)
-  }
-}
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(19);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("90321be0", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-8ef34f66!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue", function() {
-     var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-8ef34f66!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
 
 /***/ })
 /******/ ]);
